@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "ProximaNovaBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+  		url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), 
+  		url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNovaRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+  		url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), 
+  		url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNova-Light/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
+  		url("../fonts/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), 
+  		url("../fonts/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+		font-family: "Nautilus";
+		src: url("../fonts/NautilusPompilius/NautilusPompiliusRegular.eot");
+		src: url("../fonts/NautilusPompiliur/NautilusPompiliusRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/NautilusPompilius/NautilusPompiliusRegular.woff") format("woff"),
+		url("../fonts/NautilusPompilius/NautilusPompiliusRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: "Montserrat";
+		src: url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+    font-family: "MontserratBold";
+    src: url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+      font-family: "OpenSansRegular";
+      src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+      src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+      url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "OpenSansLight";
+      src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+      src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+      url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
