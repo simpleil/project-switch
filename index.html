@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<script src="https://use.fontawesome.com/6440772051.js"></script>
-	<link href="css/jquery.bxslider.css" rel="stylesheet">
-	
+	<link href="css/jquery.bxslider.css" rel="stylesheet">	
 </head>
 <body>
 	<!--begin section home-->
@@ -93,8 +92,45 @@
 				<h2>OUR LATEST WORK</h2>
 				<p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p> 
 			</div>
-			<div class="row">
-
+			<div class="worksNav">
+				<ul class="list-inline">
+					<li data-filter="all" class="active">All works</li>
+					<li data-filter=".photography">Photography</li>
+					<li data-filter=".design">Design</li>
+					<li data-filter=".print">Print</li>
+				</ul>
+			</div>
+			<div class="worksWrapper row" id="worksWrapper">
+				<div class="mix photography col-md-offset-1 col-md-2 col-sm-3 col-xs-6">
+					<img src="img/work1.png" alt="photography" class="img-responsive">
+				</div>
+				<div class="mix design col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work2.png" alt="" class="img-responsive">
+				</div>
+				<div class="mix photography col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work3.png" alt="photography" class="img-responsive">
+				</div>
+				<div class="mix photography col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work4.png" alt="print" class="img-responsive">
+				</div>
+				<div class="mix design col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work5.png" alt="design" class="img-responsive">
+				</div>
+				<div class="mix print col-md-offset-1 col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work6.png" alt="print" class="img-responsive">
+				</div>
+				<div class="mix print col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work7.png" alt="print" class="img-responsive">
+				</div>
+				<div class="mix print col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work8.png" alt="print" class="img-responsive">
+				</div>
+				<div class="mix design col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work9.png" alt="design" class="img-responsive">
+				</div>
+				<div class="mix photography col-md-2 col-sm-3 col-xs-6" >
+					<img src="img/work10.png" alt="photography" class="img-responsive">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -139,30 +175,30 @@
 					<p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p> 
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/google.png" alt="google"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/yahoo.png" alt="yahoo"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/microsoft.png" alt="microsoft"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/intel.png" alt="intel"></a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/qualcomm.png" alt="qualcomm"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/cisco.png" alt="cisco"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/apple.png" alt="apple"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 client">
 					<a href="#"><img src="img/asus.png" alt="asus"></a>
 				</div>
 			</div>
@@ -293,10 +329,16 @@
 						Email: Username@email.com<br>
 						Phone: +1 (0) 123 4567 890<br>
 						Fax: +1 (0) 321 4567 890</p>
-					<form action="#" method="post">
-						<input type="text" name="name" placeholder="Your name" id="name"><br>
-						<input type="text" name="email" placeholder="Your email"><br>
-						<textarea name="comment" rows="7" placeholder="Your message"></textarea><br>
+					<form action="#" method="post" id="contact_form">
+						<div class="form-group">
+							<input type="text" name="name" placeholder="Your name" id="name"  required>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Your email"  required>
+						</div>
+						<div class="form-group">
+							<textarea name="message-field" rows="7" placeholder="Your message"  required></textarea>
+						</div>
 						<button type="submit">SEND</button>
 					</form>
 				</div>
@@ -309,17 +351,18 @@
 		<p>
 			© 2017 Switch
 		</p>
+		<a class="scroll_to_top"><i class="fa fa-arrow-circle-up" aria-hidden="true""></i></a>	
 	</footer>
 
 
 	<!--end footer-->
 
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>	
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/main.js"></script>
+
+	
 </body>
 </html>
