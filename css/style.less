@@ -176,8 +176,7 @@
 	background-color: #ffffff;
 	text-align: center;
 	margin-top: 100vh;
-	height: 100vh;
-	
+	margin-bottom: 105px;
 	.works {
 		.ourWork {
 			img {
@@ -650,9 +649,6 @@
 	}
 }
 
-
-		
-
 footer {
 	text-align: center;
 	background-color: #111111;
@@ -678,6 +674,7 @@ footer {
 	    }
 	    &:hover {
 	      opacity: 1;
+	      cursor: pointer;
 	    }
 	  }
   .scroll_to_top:hover{
@@ -685,3 +682,79 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+	.home {
+		position: static;
+		.header {
+			ul {
+				padding-top: 20px;
+				li {
+					padding-left: 7px;
+					padding-right: 7px;
+				}
+			}
+		}
+		.name {
+			margin-top: 165px;
+			margin-bottom: 30px;
+			.moreInfo {
+				margin-top: 15%;
+			}
+		}
+	}
+	.whatWeDo {
+		margin-top: 30px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.home {
+		position: static;
+		.header {
+			.menu, .search {
+				text-align: center !important;
+			}	
+		}
+		.name {
+			margin-top: 120px;
+			margin-bottom: 30px;
+			h2 {
+				padding: 0 30px;
+			}
+			.moreInfo {
+				margin-top: 15%;
+			}	
+		}
+	}
+	.whatWeDo {
+		margin-top: 30px;
+	}
+	.ourTeam {
+		.ourManagers {
+			.manager {
+				.foto:after {
+				   height: 40px;
+				}
+				h4 {
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+	.contacts {
+		.posts {
+			.article {
+				padding-left: 30%;
+			}
+		}
+		.contactForm {
+			padding: 0 15%;
+		}
+		
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+}

@@ -35,5 +35,13 @@ $(document).ready(function(){
 
   mixitup($('.worksWrapper'));
 
-     
+  $(function () {
+  $('.navbar-collapse a, .header-logo a').click(function() {
+    if (!$(this).hasClass('dropdown-toggle')) {
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+  return false;
+});
+  
 });

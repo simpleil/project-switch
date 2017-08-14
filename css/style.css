@@ -169,7 +169,7 @@
   background-color: #ffffff;
   text-align: center;
   margin-top: 100vh;
-  height: 100vh;
+  margin-bottom: 105px;
 }
 .whatWeDo .works .ourWork img {
   padding: 25px;
@@ -690,7 +690,64 @@ footer .scroll_to_top .fa-arrow-circle-up {
 }
 footer .scroll_to_top:hover {
   opacity: 1;
+  cursor: pointer;
 }
 footer .scroll_to_top:hover {
   text-decoration: none;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .home {
+    position: static;
+  }
+  .home .header ul {
+    padding-top: 20px;
+  }
+  .home .header ul li {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .home .name {
+    margin-top: 165px;
+    margin-bottom: 30px;
+  }
+  .home .name .moreInfo {
+    margin-top: 15%;
+  }
+  .whatWeDo {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    position: static;
+  }
+  .home .header .menu,
+  .home .header .search {
+    text-align: center !important;
+  }
+  .home .name {
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+  .home .name h2 {
+    padding: 0 30px;
+  }
+  .home .name .moreInfo {
+    margin-top: 15%;
+  }
+  .whatWeDo {
+    margin-top: 30px;
+  }
+  .ourTeam .ourManagers .manager .foto:after {
+    height: 40px;
+  }
+  .ourTeam .ourManagers .manager h4 {
+    padding-top: 50px;
+  }
+  .contacts .posts .article {
+    padding-left: 30%;
+  }
+  .contacts .contactForm {
+    padding: 0 15%;
+  }
 }
