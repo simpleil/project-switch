@@ -27,21 +27,27 @@ $(document).ready(function(){
 
   $('.bxslider').bxSlider();
 
-  $('.worksNav li').on('click', function(){
-    $('.worksNav li').removeClass('active');
-    $(this).addClass('active');
-    return false;
-  });
-
   mixitup($('.worksWrapper'));
 
   $(function () {
-  $('.navbar-collapse a, .header-logo a').click(function() {
-    if (!$(this).hasClass('dropdown-toggle')) {
-      $('.navbar-collapse').collapse('hide');
-    }
+  $('.iconMenu').click(function() {
+      if (!$('.menuMobile').hasClass('active')) {
+        $('.menuMobile').addClass('active');
+        $('.iconMenu>a').html('&times;');
+      } else {
+          $('.menuMobile').removeClass('active');
+          $('.iconMenu>a').html('&#9776;');
+          
+      }
   });
   return false;
 });
+
+  $('.item').click(function() {
+    $('.menuMobile').removeClass('active');
+    $('.iconMenu>a').html('&#9776;');
+  })
+
+   
   
 });

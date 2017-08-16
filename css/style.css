@@ -19,14 +19,14 @@
   background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
-.home .header ul {
+.home .header .menu ul {
   padding-top: 20px;
 }
-.home .header ul li {
+.home .header .menu ul li {
   padding-left: 14px;
   padding-right: 14px;
 }
-.home .header ul li a {
+.home .header .menu ul li a {
   color: #ffffff;
   text-decoration: none;
   font-family: 'ProximaNovaBold', sans-serif;
@@ -34,9 +34,33 @@
   font-weight: normal;
   padding-top: 15px;
 }
-.home .header ul li a:hover {
+.home .header .menu ul li a:hover {
   border-top: 5px solid #54d154;
   text-shadow: 1px 1px 2px black, 0 0 1em #c0bdbe;
+}
+.home .header .menuMobile {
+  display: none;
+  text-align: center;
+}
+.home .header .menuMobile ul {
+  padding-top: 10px;
+}
+.home .header .menuMobile ul li {
+  padding: 10px 0;
+  list-style-type: none;
+}
+.home .header .menuMobile ul li:hover {
+  background: rgba(43, 155, 43, 0.8);
+}
+.home .header .menuMobile ul li a {
+  display: block;
+  padding: 0!important;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 15px;
 }
 .home .header .head {
   text-align: center;
@@ -72,6 +96,21 @@
   width: 350px;
   outline: none;
   border: 1px solid #54d154;
+}
+.home .iconMenu {
+  padding-top: 15px;
+  display: none;
+}
+.home .iconMenu .icon {
+  display: inline-block;
+  padding: 0 5px;
+  font-family: 'OpenSansLight', sans-serif;
+  font-size: 22px;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.home .iconMenu .icon:hover {
+  text-decoration: none;
 }
 .home .name {
   text-align: center;
@@ -706,12 +745,15 @@ footer .scroll_to_top:hover {
     padding-left: 7px;
     padding-right: 7px;
   }
-  .home .name {
-    margin-top: 165px;
+  .home .container .name {
+    margin-top: 180px;
     margin-bottom: 30px;
   }
-  .home .name .moreInfo {
+  .home .container .name .moreInfo {
     margin-top: 15%;
+  }
+  .home .container .name h2 {
+    padding: 0 150px;
   }
   .whatWeDo {
     margin-top: 30px;
@@ -747,7 +789,127 @@ footer .scroll_to_top:hover {
   .contacts .posts .article {
     padding-left: 30%;
   }
-  .contacts .contactForm {
-    padding: 0 15%;
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .home {
+    position: static;
+    padding-bottom: 0px;
+  }
+  .home .header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 200;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .home .header .head {
+    float: left;
+    padding-left: 30px;
+  }
+  .home .header .iconMenu {
+    display: block;
+    float: right;
+  }
+  .home .header .search {
+    display: none;
+  }
+  .home .header .menu {
+    display: none;
+  }
+  .home .header .menuMobile.active {
+    display: block;
+    z-index: 500;
+    height: 100vh;
+  }
+  .home .name {
+    margin-top: 200px;
+    padding-bottom: 50px;
+  }
+  .home .name h2 {
+    font-size: 42px;
+    padding-bottom: 40px;
+  }
+  .whatWeDo {
+    margin: 50px 0 30px 0;
+  }
+  .whatWeDo .ourWork {
+    margin-bottom: 25px;
+  }
+  .latestWorks .worksWrapper > .mix {
+    padding-left: 8%;
+  }
+  .contacts .posts .article {
+    padding-left: 25%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .home {
+    position: static;
+    padding-bottom: 0px;
+  }
+  .home .header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 200;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .home .header .head {
+    float: left;
+    padding-left: 20px;
+  }
+  .home .header .iconMenu {
+    display: block;
+    float: right;
+  }
+  .home .header .search {
+    display: none;
+  }
+  .home .header .menu {
+    display: none;
+  }
+  .home .header .menuMobile.active {
+    display: block;
+    z-index: 500;
+    height: 100vh;
+  }
+  .home .name {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  .home .name h2 {
+    font-size: 42px;
+    padding-bottom: 40px;
+  }
+  .home .name .moreInfo {
+    display: none;
+  }
+  .whatWeDo {
+    margin: 50px 0 10px 0;
+  }
+  .whatWeDo .container .row .ourWork {
+    padding-bottom: 30px !important;
+  }
+  .latestWorks .worksNav ul li {
+    font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .container > .about {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .testimonials {
+    padding-bottom: 30px;
+  }
+  .testimonials .bxslider .ceo {
+    text-align: center;
+    padding: 0 30px !important;
+  }
+  .ourTeam .ourManagers .manager .foto:after {
+    height: 40px;
+  }
+  .ourTeam .ourManagers .manager h4 {
+    padding-top: 50px;
   }
 }

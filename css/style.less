@@ -39,7 +39,8 @@
 		background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
 		background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
-		ul {
+		.menu {
+			ul {
 				padding-top: 20px;
 				li {
 					padding-left: 14px;
@@ -55,6 +56,29 @@
 						}
 					}
 				}
+			}
+		}
+		.menuMobile {
+			display: none;
+			text-align: center;
+			ul {
+				padding-top: 10px;
+				li {
+					padding: 10px 0;
+					list-style-type: none;
+					&:hover {
+						background: rgba(43, 155, 43, 0.8);
+					}
+					a {
+						display: block;
+						padding: 0!important;
+						color: @mainColor;		
+						text-decoration: none;
+						.fonts (@ProximaBold, 16px, normal);
+						padding-top: 15px;
+					}
+				}
+			}
 		}
 		.head {
 			text-align: center;
@@ -87,9 +111,24 @@
     				outline: none;
     				border: 1px solid @green;
 				}
+				}
 			}
 		}
-	}	
+		.iconMenu {
+			padding-top: 15px;
+			display: none;
+			.icon {
+				display: inline-block;
+				padding: 0 5px;
+				font-family: @Open ;
+				font-size: 22px;
+				color: @mainColor !important;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}	
 	.name {
 		text-align: center;
 		margin-top: 250px;
@@ -694,11 +733,16 @@ footer {
 				}
 			}
 		}
-		.name {
-			margin-top: 165px;
-			margin-bottom: 30px;
-			.moreInfo {
-				margin-top: 15%;
+		.container {
+			.name {
+				margin-top: 180px;
+				margin-bottom: 30px;
+				.moreInfo {
+					margin-top: 15%;
+				}
+				h2 {
+					padding: 0 150px;
+				}
 			}
 		}
 	}
@@ -748,13 +792,154 @@ footer {
 				padding-left: 30%;
 			}
 		}
-		.contactForm {
-			padding: 0 15%;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.home {
+		position: static;
+		padding-bottom: 0px;
+		.header {
+			position: fixed;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.8);
+			z-index: 200;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+			.head {
+				float: left;
+				padding-left: 30px;
+			}
+			.iconMenu {
+				display: block;
+				float: right;
+			}	
+			.search {
+				display: none;
+			}
+			.menu {
+				display: none;
+			}
+			.menuMobile.active {
+				display: block;
+				z-index: 500;
+				height: 100vh;
+			}
 		}
-		
+		.name {
+			margin-top: 200px;
+			padding-bottom: 50px;
+			h2 {
+				font-size: 42px;
+				padding-bottom: 40px;
+			}
+		}
+	}
+	.whatWeDo {
+		margin: 50px 0 30px 0;
+		.ourWork {
+			margin-bottom: 25px;
+		}
+	}
+	.latestWorks {
+		.worksWrapper > .mix {
+			padding-left: 8%;
+		}
+	}
+	.contacts {
+		.posts {
+			.article {
+				padding-left: 25%;
+			}
+		}
 	}
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
 
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.home {
+			position: static;
+			padding-bottom: 0px;
+		.header {
+			position: fixed;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.8);
+			z-index: 200;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+			.head {
+				float: left;
+				padding-left: 20px;
+			}
+			.iconMenu {
+				display: block;
+				float: right;
+			}	
+			.search {
+				display: none;
+			}
+			.menu {
+				display: none;
+			}
+			.menuMobile.active {
+				display: block;
+				z-index: 500;
+				height: 100vh;
+			}		 
+		}
+		.name {
+			margin-top: 100px;
+			padding-bottom: 50px;
+			h2 {
+				font-size: 42px;
+				padding-bottom: 40px;
+			}
+			.moreInfo {
+				display: none;
+			}
+		}
+	}
+	.whatWeDo {
+		margin: 50px 0 10px 0;
+		.container {
+			.row {
+				.ourWork {
+					padding-bottom: 30px !important;
+				}
+			}
+		}
+	}
+	.latestWorks {
+		.worksNav {
+			ul {
+				li {
+					.fonts (@ProximaRegular, 14px, normal);	
+				}
+			}
+		}
+	}
+	.container > .about {
+		margin-top: 70px;
+		margin-bottom: 30px;
+	}
+	.testimonials {
+		padding-bottom: 30px;
+		.bxslider {
+			.ceo {
+				text-align: center;
+				padding: 0 30px !important;
+			}
+		}
+	}
+
+	.ourTeam {
+		.ourManagers {
+			.manager {
+				.foto:after {
+				   height: 40px;
+				}
+				h4 {
+					padding-top: 50px;
+				}
+			}
+		}
+	}
 }
