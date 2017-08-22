@@ -742,8 +742,8 @@ footer .scroll_to_top:hover {
     padding-top: 20px;
   }
   .home .header ul li {
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-right: 14px !important;
+    padding-left: 0px !important;
   }
   .home .container .name {
     margin-top: 180px;
@@ -836,7 +836,7 @@ footer .scroll_to_top:hover {
     margin-bottom: 25px;
   }
   .latestWorks .worksWrapper > .mix {
-    padding-left: 8%;
+    padding-left: 14%;
   }
   .contacts .posts .article {
     padding-left: 25%;
