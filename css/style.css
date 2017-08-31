@@ -103,7 +103,7 @@
 }
 .home .iconMenu .icon {
   display: inline-block;
-  padding: 0 5px;
+  padding: 5px;
   font-family: 'OpenSansLight', sans-serif;
   font-size: 22px;
   color: #ffffff !important;
